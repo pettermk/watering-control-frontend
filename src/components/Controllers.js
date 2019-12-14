@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux'
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -8,21 +9,16 @@ import Typography from '@material-ui/core/Typography';
 import ReactSpeedometer from "react-d3-speedometer";
 import { fetchControllers } from '../api/Api.js';
 import { useStyles } from '../styles/Styles.js';
+import { ControllersAction } from '../actions/ControllersAction';
 
 export function Controllers (props) {
   const classes = useStyles();
-  const [controllers, setControllers] = useState([]);
-  useEffect(
-    () => {
-      async function fetchControllerData() {
-        const result = await fetchControllers();
-        setControllers(result.data);
-        console.log(controllers);
-      }
-      fetchControllerData();
-    },
-    [],
-  )
+  const dispatch = useDispatch();
+    useEffect(
+        () => {
+            dispatch(ControllersAction())
+        }, [])
+  const controllers = useSelector(state => state.controllers.controllers)
   return (
     <Grid container spacing={4} className={classes.cardGrid}>
       {controllers.length > 0 ? controllers.map((controller, index) => (

@@ -1,19 +1,17 @@
-import * as inputs from '../actions/InputsAction'
+import * as controllers from '../actions/ControllersAction'
 
 const initialState = {
-    inputs: []
+    controllers: []
 }
 
 export default (state=initialState, action) => {
   switch(action.type) {
-      case inputs.INPUTS_SUCCESS:
+      case controllers.CONTROLLERS_SUCCESS:
           return {
               ...state,
-              inputs: action.payload
+              controllers: action.payload
           }
     default:
       return state
   }
 }
-
-export const inputsFromServer = (state) => state.inputs

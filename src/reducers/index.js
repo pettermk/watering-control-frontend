@@ -2,10 +2,14 @@ import { combineReducers } from 'redux'
 import { connectRouter } from 'connected-react-router'
 import auth, * as fromAuth from './Auth.js'
 import inputs from './Inputs.js'
+import outputs from './Outputs.js'
+import controllers from './Controllers.js'
 
 const createRootReducer = (history) => combineReducers({
   auth: auth,
   inputs: inputs,
+  outputs: outputs,
+  controllers: controllers,
   router: connectRouter(history),
 })
 

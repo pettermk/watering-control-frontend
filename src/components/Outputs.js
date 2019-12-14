@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -6,22 +7,17 @@ import CardContent from '@material-ui/core/CardContent';
 import Hidden from '@material-ui/core/Hidden';
 import Typography from '@material-ui/core/Typography';
 import ReactSpeedometer from "react-d3-speedometer";
-import { fetchOutputs } from '../api/Api.js';
 import { useStyles } from '../styles/Styles.js';
+import { OutputsAction } from '../actions/OutputsAction';
 
 export function Outputs (props) {
   const classes = useStyles();
-  const [outputs, setOutputs] = useState([]);
-  useEffect(
-    () => {
-      async function fetchOutputData() {
-        const result = await fetchOutputs();
-        setOutputs(result.data);
-      }
-      fetchOutputData();
-    },
-    [],
-  )
+  const dispatch = useDispatch();
+    useEffect(
+        () => {
+            dispatch(OutputsAction())
+        }, [])
+  const outputs = useSelector(state => state.outputs.outputs)
   return (
     <Grid container spacing={4} className={classes.cardGrid}>
       {outputs.length > 0 ? outputs.map((output, index) => (
