@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/watering-control-frontend/precache-manifest.21a7cebcf64f5871736291bd8ba640cf.js"
+  "/watering-control-frontend/precache-manifest.4858de2c2f3169663a276bbdf7c5dd89.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0114f61aa1be049de3a0c202f5006a4c",
+    "revision": "3695554dbcee666617e24371c16c9e42",
     "url": "/watering-control-frontend/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/watering-control-frontend/static/css/2.82d21c52.chunk.css"
   },
   {
-    "revision": "deacfebc8eb1ac0be98a",
+    "revision": "533b6d220261bfb7235a",
     "url": "/watering-control-frontend/static/css/main.f9c67ae1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/watering-control-frontend/static/js/2.faf71eb6.chunk.js"
   },
   {
-    "revision": "deacfebc8eb1ac0be98a",
-    "url": "/watering-control-frontend/static/js/main.57daf4ce.chunk.js"
+    "revision": "533b6d220261bfb7235a",
+    "url": "/watering-control-frontend/static/js/main.f959f8df.chunk.js"
   },
   {
     "revision": "125022adf00d680e1af3",
