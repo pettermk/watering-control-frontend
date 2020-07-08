@@ -6,7 +6,7 @@ export const INPUTS_SUCCESS = '@@inputs/INPUTS_SUCCESS';
 export const INPUTS_FAILURE = '@@inputs/INPUTS_FAILURE';
 export const InputsAction = () => ({
   [RSAA]: {
-      endpoint: '/web/inputs/',
+      endpoint: 'https://92.221.106.142/web/inputs/',
       method: 'GET',
       //body: JSON.stringify({message: message}),
       headers: withAuth({ 'Content-Type': 'application/json' }),

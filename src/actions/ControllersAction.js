@@ -6,7 +6,7 @@ export const CONTROLLERS_SUCCESS = '@@controllers/CONTROLLERS_SUCCESS';
 export const CONTROLLERS_FAILURE = '@@controllers/CONTROLLERS_FAILURE';
 export const ControllersAction = () => ({
   [RSAA]: {
-      endpoint: '/web/controllers/',
+      endpoint: 'https://92.221.106.142/web/controllers/',
       method: 'GET',
       headers: withAuth({ 'Content-Type': 'application/json' }),
       types: [
