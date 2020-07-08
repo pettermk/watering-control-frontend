@@ -15,7 +15,7 @@ import Gauge from 'react-radial-gauge';
 import Nav from "./Nav.js";
 import PropTypes from 'prop-types';
 import { withTheme } from '@material-ui/styles';
-import { BrowserRouter as Router, Route, Link as RouterLink } from "react-router-dom";
+import { HashRouter as Router, Route, Link as RouterLink } from "react-router-dom";
 import { useTheme } from '@material-ui/styles';
 import { Inputs } from './Inputs.js';
 import { Outputs } from './Outputs.js';
