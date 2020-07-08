@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/watering-control-frontend/static/css/main.f9c67ae1.chunk.css",
+    "main.js": "/watering-control-frontend/static/js/main.57daf4ce.chunk.js",
+    "main.js.map": "/watering-control-frontend/static/js/main.57daf4ce.chunk.js.map",
+    "runtime~main.js": "/watering-control-frontend/static/js/runtime~main.3ad838a7.js",
+    "runtime~main.js.map": "/watering-control-frontend/static/js/runtime~main.3ad838a7.js.map",
+    "static/css/2.82d21c52.chunk.css": "/watering-control-frontend/static/css/2.82d21c52.chunk.css",
+    "static/js/2.faf71eb6.chunk.js": "/watering-control-frontend/static/js/2.faf71eb6.chunk.js",
+    "static/js/2.faf71eb6.chunk.js.map": "/watering-control-frontend/static/js/2.faf71eb6.chunk.js.map",
+    "index.html": "/watering-control-frontend/index.html",
+    "precache-manifest.21a7cebcf64f5871736291bd8ba640cf.js": "/watering-control-frontend/precache-manifest.21a7cebcf64f5871736291bd8ba640cf.js",
+    "service-worker.js": "/watering-control-frontend/service-worker.js",
+    "static/css/2.82d21c52.chunk.css.map": "/watering-control-frontend/static/css/2.82d21c52.chunk.css.map",
+    "static/css/main.f9c67ae1.chunk.css.map": "/watering-control-frontend/static/css/main.f9c67ae1.chunk.css.map",
+    "static/media/logo.svg": "/watering-control-frontend/static/media/logo.5d5d9eef.svg",
+    "static/media/index.css": "/watering-control-frontend/static/media/roboto-latin-900italic.bc833e72.woff"
+  }
+}
