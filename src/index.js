@@ -17,8 +17,8 @@ ReactDOM.render((
     <Provider store={store}>
         <ConnectedRouter history={history}>
             <Switch>
-                <Route exact path="/login/" component={Login} />
-                <PrivateRoute path="/" component={App}/>
+                <Route exact path="/watering-control-frontend/login/" component={Login} />
+                <PrivateRoute path="/watering-control-frontend/" component={App}/>
             </Switch>
         </ConnectedRouter>
     </Provider>
