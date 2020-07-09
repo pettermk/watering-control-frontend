@@ -7,40 +7,37 @@ import CardContent from '@material-ui/core/CardContent';
 import Hidden from '@material-ui/core/Hidden';
 import Typography from '@material-ui/core/Typography';
 import ReactSpeedometer from "react-d3-speedometer";
-import { fetchInputs } from '../api/Api.js';
+import { fetchControllers } from '../api/Api.js';
 import { useStyles } from '../styles/Styles.js';
-import { InputsAction } from '../actions/InputsAction';
+import { ControllersAction } from '../actions/ControllersAction';
 
-export function Inputs (props) {
+export function Controllers (props) {
   const classes = useStyles();
   const dispatch = useDispatch();
     useEffect(
         () => {
-            dispatch(InputsAction())
+            dispatch(ControllersAction());
         }, [])
-  const inputs = useSelector(state => state.inputs.inputs)
+    const controllers = useSelector(state => state.controllers.controllers);
   return (
     <Grid container spacing={4} className={classes.cardGrid}>
-      {inputs.length > 0 ? inputs.map((input) => (
-        <Grid item key={input.id} xs={12} md={6}>
+      {controllers.length > 0 ? controllers.map((controller, index) => (
+        <Grid item key={controller.id} xs={12} md={6}>
           <CardActionArea component="a" href="#">
             <Card className={classes.card}>
               <div className={classes.cardDetails}>
                 <CardContent>
                   <Typography component="h2" variant="h5">
-                    {input.name}
+                    {controller.name}
                   </Typography>
                   <Typography variant="subtitle1" color="textSecondary">
-                    {input.description}
+                    {controller.description}
                   </Typography>
                   <Typography variant="subtitle1" paragraph>
-                    {input.location}
+                    {controller.set_point}
                   </Typography>
                 </CardContent>
               </div>
-              <Hidden xsDown>
-                <ReactSpeedometer size={150} value={70} />
-              </Hidden>
             </Card>
           </CardActionArea>
         </Grid>

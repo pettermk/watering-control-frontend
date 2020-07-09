@@ -54,23 +54,6 @@ export default function SignIn() {
   const [username, setUsername] = useState();
     const [password, setPassword] = useState();
     const dispatch = useDispatch();
-  // useEffect(
-  //   () => {
-  //     async function fetchControllerData() {
-  //       const result = await fetchControllers();
-  //       setControllers(result.data);
-  //       console.log(controllers);
-  //     }
-  //     fetchControllerData();
-  //   },
-  //   [],
-  // )
-    //const handleSubmit = (event) => {
-    //    if (event) {
-    //        event.preventDefault();
-    //    }
-    //    this.props.onSubmit(username, password)
-    //}
 
     return (
     <Container component="main" maxWidth="xs">

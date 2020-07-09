@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import 'typeface-roboto';
 import './App.css';
-import WaterApp from './components/Main.js';
+import WaterApp from './components/Main';
 
 function App() {
   return (

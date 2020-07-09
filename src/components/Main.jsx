@@ -12,15 +12,15 @@ import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 import Container from '@material-ui/core/Container';
 import Gauge from 'react-radial-gauge';
-import Nav from "./Nav.js";
+import Nav from "./Nav";
 import PropTypes from 'prop-types';
 import { withTheme } from '@material-ui/styles';
 import { HashRouter as Router, Route, Link as RouterLink } from "react-router-dom";
 import { useTheme } from '@material-ui/styles';
-import { Inputs } from './Inputs.js';
-import { Outputs } from './Outputs.js';
-import { Controllers } from './Controllers.js';
-import { useStyles } from '../styles/Styles.js';
+import { Inputs } from './Inputs';
+import { Outputs } from './Outputs';
+import { Controllers } from './Controllers';
+import { useStyles } from '../styles/Styles';
 
 function MadeWithLove() {
   return (
@@ -95,7 +95,7 @@ export default function WaterApp (props) {
                   )}
                 />
               </React.Fragment>
-            )
+            );
           })}
         </Toolbar>
         <main>
@@ -107,7 +107,7 @@ export default function WaterApp (props) {
               <Route exact path={sections[key][0]} component={sections[key][2]} />
             ) : (
               <Route path={sections[key][0]} component={sections[key][2]} />
-            )
+            );
             })
           }
           {/* End sub featured posts */}
