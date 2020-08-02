@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/watering-control-frontend/static/css/main.f9c67ae1.chunk.css",
-    "main.js": "/watering-control-frontend/static/js/main.5e8b0741.chunk.js",
-    "main.js.map": "/watering-control-frontend/static/js/main.5e8b0741.chunk.js.map",
+    "main.js": "/watering-control-frontend/static/js/main.c099b69b.chunk.js",
+    "main.js.map": "/watering-control-frontend/static/js/main.c099b69b.chunk.js.map",
     "runtime~main.js": "/watering-control-frontend/static/js/runtime~main.3ad838a7.js",
     "runtime~main.js.map": "/watering-control-frontend/static/js/runtime~main.3ad838a7.js.map",
     "static/css/2.82d21c52.chunk.css": "/watering-control-frontend/static/css/2.82d21c52.chunk.css",
     "static/js/2.faf71eb6.chunk.js": "/watering-control-frontend/static/js/2.faf71eb6.chunk.js",
     "static/js/2.faf71eb6.chunk.js.map": "/watering-control-frontend/static/js/2.faf71eb6.chunk.js.map",
     "index.html": "/watering-control-frontend/index.html",
-    "precache-manifest.f551cd667f47052c9ab0dd67a6d3bd87.js": "/watering-control-frontend/precache-manifest.f551cd667f47052c9ab0dd67a6d3bd87.js",
+    "precache-manifest.3d17af91f2ac2853cf6fba1449a2f066.js": "/watering-control-frontend/precache-manifest.3d17af91f2ac2853cf6fba1449a2f066.js",
     "service-worker.js": "/watering-control-frontend/service-worker.js",
     "static/css/2.82d21c52.chunk.css.map": "/watering-control-frontend/static/css/2.82d21c52.chunk.css.map",
     "static/css/main.f9c67ae1.chunk.css.map": "/watering-control-frontend/static/css/main.f9c67ae1.chunk.css.map",
