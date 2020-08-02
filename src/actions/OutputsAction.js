@@ -6,7 +6,7 @@ export const OUTPUTS_SUCCESS = '@@outputs/OUTPUTS_SUCCESS';
 export const OUTPUTS_FAILURE = '@@outputs/OUTPUTS_FAILURE';
 export const OutputsAction = () => ({
   [RSAA]: {
-      endpoint: 'https://92.221.106.142/web/outputs/',
+      endpoint: 'https://homeautomation-api.kvalvaag-tech.com/web/outputs/',
       method: 'GET',
       headers: withAuth({ 'Content-Type': 'application/json' }),
       types: [

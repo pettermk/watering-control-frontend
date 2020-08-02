@@ -6,7 +6,7 @@ export const CONTROLLERS_SUCCESS = '@@controllers/CONTROLLERS_SUCCESS';
 export const CONTROLLERS_FAILURE = '@@controllers/CONTROLLERS_FAILURE';
 export const ControllersAction = () => ({
   [RSAA]: {
-      endpoint: 'https://92.221.106.142/web/controllers/',
+      endpoint: 'https://homeautomation-api.kvalvaag-tech.com/web/controllers/',
       method: 'GET',
       headers: withAuth({ 'Content-Type': 'application/json' }),
       types: [
