@@ -26,7 +26,6 @@
     "redux-persist-transform-filter": "0.0.20",
     "typeface-roboto": "0.0.54"
   },
-  "homepage": "/watering-control-frontend",
   "scripts": {
     "predeploy": "HTTPS=true npm run build && cp CNAME build/",
     "deploy": "gh-pages -d build",
