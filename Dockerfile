@@ -9,6 +9,6 @@ COPY public/ public/
 
 RUN npm run build
 
-FROM nginx:alpine
+FROM nginxinc/nginx-unprivileged
 
 COPY --from=builder build/ /usr/share/nginx/html/
